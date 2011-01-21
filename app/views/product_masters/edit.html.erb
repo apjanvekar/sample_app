@@ -1,0 +1,28 @@
+<h1>Editing product_master</h1>
+
+<% form_for(@product_master) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :Quntity %><br />
+    <%= f.text_field :Quntity %>
+  </p>
+  <p>
+    <%= f.label :price %><br />
+    <%= f.text_field :price %>
+  </p>
+  <p>
+    <%= f.label :tax %><br />
+    <%= f.text_field :tax %>
+  </p>
+  <p>
+    <%= f.label :date %><br />
+    <%= f.date_select :date %>
+  </p>
+  <p>
+    <%= f.submit 'Update' %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @product_master %> |
+<%= link_to 'Back', product_masters_path %>

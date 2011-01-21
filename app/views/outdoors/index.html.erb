@@ -1,0 +1,24 @@
+<h1>Listing outdoors</h1>
+
+<table>
+  <tr>
+    <th>Vehicle no</th>
+    <th>Driver name</th>
+    <th>Date</th>
+  </tr>
+
+<% @outdoors.each do |outdoor| %>
+  <tr>
+    <td><%=h outdoor.vehicle_no %></td>
+    <td><%=h outdoor.driver_name %></td>
+    <td><%=h outdoor.date %></td>
+    <td><%= link_to 'Show', outdoor %></td>
+    <td><%= link_to 'Edit', edit_outdoor_path(outdoor) %></td>
+    <td><%= link_to 'Destroy', outdoor, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New outdoor', new_outdoor_path %>

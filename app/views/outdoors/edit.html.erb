@@ -1,0 +1,24 @@
+<h1>Editing outdoor</h1>
+
+<% form_for(@outdoor) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :vehicle_no %><br />
+    <%= f.text_field :vehicle_no %>
+  </p>
+  <p>
+    <%= f.label :driver_name %><br />
+    <%= f.text_field :driver_name %>
+  </p>
+  <p>
+    <%= f.label :date %><br />
+    <%= f.date_select :date %>
+  </p>
+  <p>
+    <%= f.submit 'Update' %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @outdoor %> |
+<%= link_to 'Back', outdoors_path %>

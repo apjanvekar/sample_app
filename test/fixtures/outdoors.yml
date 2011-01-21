@@ -1,0 +1,11 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  vehicle_no: MyString
+  driver_name: MyString
+  date: 2010-12-19
+
+two:
+  vehicle_no: MyString
+  driver_name: MyString
+  date: 2010-12-19

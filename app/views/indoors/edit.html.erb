@@ -1,0 +1,20 @@
+<h1>Editing indoor</h1>
+
+<% form_for(@indoor) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :date %><br />
+    <%= f.date_select :date %>
+  </p>
+  <p>
+    <%= f.label :sales_incharge %><br />
+    <%= f.text_field :sales_incharge %>
+  </p>
+  <p>
+    <%= f.submit 'Update' %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @indoor %> |
+<%= link_to 'Back', indoors_path %>

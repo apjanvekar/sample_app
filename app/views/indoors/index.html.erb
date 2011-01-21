@@ -1,0 +1,22 @@
+<h1>Listing indoors</h1>
+
+<table>
+  <tr>
+    <th>Date</th>
+    <th>Sales incharge</th>
+  </tr>
+
+<% @indoors.each do |indoor| %>
+  <tr>
+    <td><%=h indoor.date %></td>
+    <td><%=h indoor.sales_incharge %></td>
+    <td><%= link_to 'Show', indoor %></td>
+    <td><%= link_to 'Edit', edit_indoor_path(indoor) %></td>
+    <td><%= link_to 'Destroy', indoor, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New indoor', new_indoor_path %>

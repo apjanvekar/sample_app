@@ -1,0 +1,18 @@
+<p>
+  <b>Vehicle no:</b>
+  <%=h @outdoor.vehicle_no %>
+</p>
+
+<p>
+  <b>Driver name:</b>
+  <%=h @outdoor.driver_name %>
+</p>
+
+<p>
+  <b>Date:</b>
+  <%=h @outdoor.date %>
+</p>
+
+
+<%= link_to 'Edit', edit_outdoor_path(@outdoor) %> |
+<%= link_to 'Back', outdoors_path %>

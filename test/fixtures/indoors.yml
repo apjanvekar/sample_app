@@ -1,0 +1,9 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  date: 2010-12-19
+  sales_incharge: MyString
+
+two:
+  date: 2010-12-19
+  sales_incharge: MyString
